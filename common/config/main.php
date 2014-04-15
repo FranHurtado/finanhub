@@ -66,10 +66,10 @@ return array(
 		'siteURL'            => 'http://formacion.upta.es',
 		'pagesize'			 => '50',
 		// mailer variables
-		'appMailServer'=>'mail.uptastartup.com',
+		'appMailServer'=>'mail.hucaconsulting.es',
         'appMailPort'=>25,
-        'appMailUser'=>'no-reply@uptastartup.com',
-        'appMailPass'=>'Startup00Z',
+        'appMailUser'=>'no-reply@hucaconsulting.es',
+        'appMailPass'=>'send00Z',
         'backendUserFiles' => dirname(__FILE__) . '/../..' . '/backend/www/img/userfiles/',
         'frontendUserFiles' => dirname(__FILE__) . '/../..' . '/frontend/www/img/userfiles/'
 	)
