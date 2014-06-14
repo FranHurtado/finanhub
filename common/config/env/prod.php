@@ -9,15 +9,14 @@
  */
 return array(
 	'components' => array(
-//		'db' => array(
-//			// setup to suit your needs
-//			'connectionString' => '{DB_CONNECTION}',
-//			'username' => '{DB_USER}',
-//			'password' => '{DB_PASSWORD}',
-//			'enableProfiling' => false,
-//			'enableParamLogging' => false,
-//			'charset' => 'utf8',
-//		),
+		'mongodb' => array(
+	        'class'             => 'EMongoDB',
+	        'connectionString'  => 'mongodb://fran:fran00Z@ds053808.mongolab.com:53808/franmongo',
+	        'dbName'            => 'franmongo',
+	        'fsyncFlag'         => false,
+	        'safeFlag'          => false,
+	        'useCursor'         => false,
+	    ),
 	),
 	'params' => array(
 		'yii.debug' => false,

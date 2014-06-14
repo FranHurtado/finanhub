@@ -13,7 +13,7 @@ defined('APP_CONFIG_NAME') or define('APP_CONFIG_NAME', 'frontend');
 
 // web application configuration
 return array(
-	'name' => 'Fran Mongo',
+	'name' => 'Financial Hub',
 	'basePath' => realPath(__DIR__ . '/..'),
 	// path aliases
 	'aliases' => array(

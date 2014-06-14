@@ -8,21 +8,11 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 return array(
-	'modules' => array(
-		'gii' => array(
-			'class' => 'system.gii.GiiModule',
-			'password' => 'chuloc0',
-			'ipFilters' => array('127.0.0.1','::1'),
-		),
-	),
 	'components' => array(
-		'db' => array(
-			'connectionString' => 'mysql:host=localhost;dbname=cursosUpta',
-			'username' => 'startup_user',
-			'password' => 'startup00Z',
-			'enableProfiling' => true,
-			'enableParamLogging' => true,
-			'charset' => 'utf8',
+		'mongodb' => array(
+		    'class' => 'EMongoClient',
+		    'server' => 'mongodb://localhost',
+		    'db' => 'finanhub'
 		),
 	),
 	'params' => array(

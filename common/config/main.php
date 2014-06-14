@@ -12,9 +12,7 @@
 return array(
 	'language'=>'es',
 	'sourceLanguage'=>'es',
-	
-	'behaviors' => array('ApplicationConfigBehavior'),
-	
+		
 	'preload' => array('log'),
 	'aliases' => array(
 		'frontend' => dirname(__FILE__) . '/../..' . '/frontend',
@@ -30,14 +28,28 @@ return array(
 		'application.controllers.*',
 		'application.extensions.*',
 		'application.helpers.*',
-		'application.models.*'
+		'application.models.*',
+		'common.extensions.MongoYii.*',
+		'common.extensions.MongoYii.validators.*',
+		'common.extensions.MongoYii.behaviors.*',
+		'common.extensions.MongoYii.util.*'
+	),
+	'modules' => array(
+		'gii' => array(
+			'class' => 'system.gii.GiiModule',
+			'password' => 'chuloc0',
+			'ipFilters' => array('127.0.0.1','::1'),
+		),
 	),
 	'components' => array(
-		/*
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+		'db' => array(
+			'connectionString' => 'mysql:host=localhost;dbname=finanhub',
+			'username' => 'fran',
+			'password' => 'fran00Z',
+			'enableProfiling' => true,
+			'enableParamLogging' => true,
+			'charset' => 'utf8',
 		),
-		*/
 		'messages'=>array(
 			'basePath'=>dirname(__FILE__) . '/../..' . '/common/messages',
 		),
@@ -51,8 +63,8 @@ return array(
 				array(
 					'class'        => 'CDbLogRoute',
 					'connectionID' => 'db',
-					/*'levels'       => 'trace, error, warning',*/
-					'levels'       => '', // All levels 
+					'levels'       => 'trace, error, warning',
+					/* 'levels'       => '', // All levels */ 
 				),
 			),
 		),
@@ -63,14 +75,14 @@ return array(
 		'php.timezone'       => 'UTC',
 		'imgPath'            => './img/userfiles/',
 		'imgPublicPath'      => '/img/userfiles/',
-		'siteURL'            => 'http://formacion.upta.es',
+		'siteRoot'           => 'http://finanhub.local/',
 		'pagesize'			 => '50',
 		// mailer variables
-		'appMailServer'=>'mail.hucaconsulting.es',
+		'appMailServer'=>'',
         'appMailPort'=>25,
-        'appMailUser'=>'no-reply@hucaconsulting.es',
-        'appMailPass'=>'send00Z',
+        'appMailUser'=>'',
+        'appMailPass'=>'',
         'backendUserFiles' => dirname(__FILE__) . '/../..' . '/backend/www/img/userfiles/',
         'frontendUserFiles' => dirname(__FILE__) . '/../..' . '/frontend/www/img/userfiles/'
-	)
+	),
 );

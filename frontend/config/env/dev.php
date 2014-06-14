@@ -10,22 +10,15 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 return array(
-	'modules' => array(
-		'gii' => array(
-			'class' => 'system.gii.GiiModule',
-			'password' => 'chuloc0',
-			'ipFilters' => array('127.0.0.1','::1'),
-		),
-	),
 	'components' => array(
-		'db' => array(
-			'connectionString' => 'mysql:host=localhost;dbname=urank_ddbb',
-			'username' => 'urank_user',
-			'password' => 'urank99Z',
+		/*'db' => array(
+			'connectionString' => 'mysql:host=;dbname=',
+			'username' => '',
+			'password' => '',
 			'enableProfiling' => true,
 			'enableParamLogging' => true,
 			'charset' => 'utf8',
-		),
+		),*/
 	),
 	'params' => array(
 		'yii.handleErrors'   => true,
