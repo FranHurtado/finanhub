@@ -51,12 +51,13 @@ function sliderHeight()
 // Menu mobile
 function menuMobile()
 {
-	if($(window).width() <= "768")
+	if($(window).width() < 768)
 	{
+		//Activate menu mobile button
 		$("#btnMenuMobile").removeClass("hide");
-		$("#btnMenuMobile").click(function(e){
+		$("#btnMenuMobile").click(function(e){ //Button hamburguer action
 			e.preventDefault();
-			
+
 			if($("#mobile-menu").hasClass("hide"))
 			{
 				$("#mobile-menu").removeClass("hide");

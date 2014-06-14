@@ -67,7 +67,8 @@ module.exports = function(grunt) {
           'js/tab.js',
           'js/affix.js',
           'js/magnific-popup.js',
-          'js/custom.js'
+          'js/custom.js',
+          'js/retina.min.js'
         ],
         dest: '../../public/js/<%= pkg.name %>.js'
       }
