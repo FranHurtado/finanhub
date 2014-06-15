@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	activatePopups();
 	stickyNavBar();
 	menuMobile();
 });
@@ -11,6 +12,16 @@ $(window).resize(function(){
 	sliderHeight();
 	menuMobile();
 });
+
+
+//Popup triggers
+function activatePopups()
+{
+	/* Login popup trigger */
+	$('#btn-login, #btn-login-mobile').magnificPopup({
+		type:'inline',
+	});
+}
 
 // Sticky nav bar
 function stickyNavBar()
@@ -51,24 +62,26 @@ function sliderHeight()
 // Menu mobile
 function menuMobile()
 {
+	$("#btnMenuMobile").click(function(e){ //Button hamburguer action
+		e.preventDefault();
+
+		if($("#mobile-menu").hasClass("hide"))
+		{
+			$("#mobile-menu").removeClass("hide");
+			var height = $(window).height() - $("header").height();
+			$("#mobile-menu").css("height", height);
+		}
+		else
+		{
+			$("#mobile-menu").addClass("hide");
+		}
+	});
+		
 	if($(window).width() < 768)
 	{
 		//Activate menu mobile button
 		$("#btnMenuMobile").removeClass("hide");
-		$("#btnMenuMobile").click(function(e){ //Button hamburguer action
-			e.preventDefault();
-
-			if($("#mobile-menu").hasClass("hide"))
-			{
-				$("#mobile-menu").removeClass("hide");
-				var height = $(window).height() - $("header").height();
-				$("#mobile-menu").css("height", height);
-			}
-			else
-			{
-				$("#mobile-menu").addClass("hide");
-			}
-		});
+		
 		$(".btn-header").each(function(){
 			$(this).addClass("hide");
 		});

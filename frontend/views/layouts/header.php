@@ -23,6 +23,10 @@
 						<?php echo Yii::t("home", "Contact"); ?>
 					</a>
 					
+					<a href="#login-popup" class="btn btn-header btn-blue radius" id="btn-login">
+						<?php echo Yii::t("home", "Log in"); ?>
+					</a>
+					
 					<a href="#" class="hide" id="btnMenuMobile">
 						<img src="<?php echo Yii::app()->params->siteRoot; ?>img/btn-menu-mobile.png" />
 					</a>
@@ -50,4 +54,12 @@
 	<a href="#" class="btn btn-mobile no-radius">
 		<?php echo Yii::t("home", "Contact"); ?>
 	</a>
-</div>
+	
+	<a href="#login-popup" class="btn btn-mobile no-radius" id="btn-login-mobile">
+		<?php echo Yii::t("home", "Log in"); ?>
+	</a>
+</div> <!-- /#mobile-menu -->
+
+<div id="login-popup" class="popup mfp-hide">
+	
+</div> <!-- /#login-popup -->

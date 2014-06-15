@@ -7789,6 +7789,10 @@ textarea {
   margin: 0 !important;
 }
 
+.navbar .btn-group {
+  padding-top: 0.35em;
+}
+
 /**
 ** Buttons ** 
 **/
@@ -7797,6 +7801,12 @@ textarea {
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
+}
+
+.radius {
+  -webkit-border-radius: 5px !important;
+     -moz-border-radius: 5px !important;
+          border-radius: 5px !important;
 }
 
 .btn-join-home {
@@ -7816,7 +7826,7 @@ textarea {
 .btn-header,
 .btn-mobile {
   font-size: 1.4em;
-  line-height: 2.2em;
+  line-height: 1.8em;
   color: #ffffff;
   background-image: none !important;
   background-repeat: no-repeat !important;
@@ -7840,11 +7850,20 @@ textarea {
   border-color: none !important;
 }
 
+.btn-header {
+  padding: 0 0.8em 0.05em 0.8em;
+  margin: 0 0 0 1em !important;
+}
+
 .btn-mobile {
   display: block !important;
   width: 100% !important;
   text-align: left;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-blue {
+  background-color: #71a7cb;
 }
 
 /** 

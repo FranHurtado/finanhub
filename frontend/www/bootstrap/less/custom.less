@@ -199,6 +199,10 @@ input[type=text], input[type=password], textarea{
 .navbar{
 	min-height: 20px !important;
 	margin: 0 !important;
+	
+	.btn-group{
+		padding-top: 0.35em;
+	}
 }
 
 /**
@@ -209,6 +213,12 @@ input[type=text], input[type=password], textarea{
 	border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 	-webkit-border-radius: 0 !important;
+}
+
+.radius{
+	border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
 }
 
 .btn-join-home{
@@ -228,7 +238,7 @@ input[type=text], input[type=password], textarea{
 .btn-header, .btn-mobile {
 	font-size: 1.4em;
 	color: @white;
-	line-height: 2.2em;
+	line-height: 1.8em;
     background-image: none !important;
     background-repeat: no-repeat !important;
     border-color: none !important;
@@ -243,11 +253,20 @@ input[type=text], input[type=password], textarea{
     border-color: none !important;
 }
 
+.btn-header{
+	padding: 0 0.8em 0.05em 0.8em;
+    margin: 0 0 0 1em !important;
+}
+
 .btn-mobile{
 	width: 100% !important;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	display: block !important;
 	text-align: left;
+}
+
+.btn-blue{
+	background-color: @brand-blue;
 }
 
 /** 
