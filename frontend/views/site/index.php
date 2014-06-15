@@ -13,7 +13,7 @@
 			<div class="col-xs-4 col-sm-5 col-md-5"></div>
 			
 			<div class="col-xs-4 col-sm-2 col-md-2">
-				<a href="#login-popup" class="btn-join-home" id="btn-join"><?php echo Yii::t("home", "JOIN NOW"); ?></a>
+				<a href="#login-popup" class="btn-join-home radius" id="btn-join"><?php echo Yii::t("home", "JOIN NOW"); ?></a>
 			</div>
 			
 			<div class="col-xs-4 col-sm-5 col-md-5"></div>

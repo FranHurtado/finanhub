@@ -19,6 +19,9 @@
  * @version $Id: $
  */
 return array (
-  'Enter to panel' => '',
-  'Send' => '',
+  'Contact' => 'Contacto',
+  'How it works' => 'Como funciona',
+  'JOIN NOW' => 'CREAR CUENTA',
+  'Sign in' => 'Entrar',
+  'View Demo' => 'Ver demo',
 );

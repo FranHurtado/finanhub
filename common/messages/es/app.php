@@ -19,6 +19,6 @@
  * @version $Id: $
  */
 return array (
-  'Enter to panel' => '',
-  'Send' => '',
+  'Hubo un problema' => '',
+  'Hubo un problema y la pagina no se encuentra operativa. Intentelo de nuevo mas tarde o contacte con nosotros.' => '',
 );

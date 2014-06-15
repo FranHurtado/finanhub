@@ -19,6 +19,9 @@
  * @version $Id: $
  */
 return array (
-  'Enter to panel' => '',
-  'Send' => '',
+  'Can not access a property of a non existent object' => '',
+  'Can not call a method of a non existent object' => '',
+  'Can not set a property of a non existent object' => '',
+  'pathLayouts must be a Yii alias path' => '',
+  'pathViews must be a Yii alias path' => '',
 );

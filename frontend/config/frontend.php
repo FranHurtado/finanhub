@@ -44,17 +44,18 @@ return array(
 				'bootstrap-yii.css' => false
 			)
 		),
-		'urlManager' => array(
-			// uncomment the following if you have enabled Apache's Rewrite module.
-			'urlFormat' => 'path',
-			'showScriptName' => false,
-
-			'rules' => array(
-				// default rules
-				'<controller:\w+>/<id:\d+>' => '<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-				'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+		'urlManager'=>array(
+			'class'=>'UrlManager',    
+			'urlFormat'=>'path',
+			'rules'=>array(    
+				'/'=>'site/index',      
+				'<lang>/<controller:\w+>'=>'<controller>/index',
+				'<lang>/<controller:\w+>/<id:\d+>'=>'<controller>/view', 
+				'<lang>/<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'<lang>/<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',   
+				'<lang>'=>'/',         
 			),
+			'showScriptName'=>false,
 		),
 		'user' => array(
 			'allowAutoLogin' => true,

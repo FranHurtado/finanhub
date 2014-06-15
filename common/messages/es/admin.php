@@ -19,6 +19,6 @@
  * @version $Id: $
  */
 return array (
-  'Enter to panel' => '',
-  'Send' => '',
+  'Borrar' => '',
+  'Ver/Editar' => '',
 );

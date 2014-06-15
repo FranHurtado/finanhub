@@ -182,14 +182,52 @@ footer{
 	}
 }
 
+.login-form{
+	
+	h1{
+		font-family: @font-family-lucida;
+		font-size: 3em !important;
+		color: @brand-green !important;
+		text-shadow: none !important;
+		margin: 0.5em 0 0.6em 0 !important;
+		padding-left: 0.9em;
+		display: inline-block;
+		text-align: center;
+		
+		span{
+			color: @brand-grey;
+		}
+	}
+}
+
 /**
 ** Form elements
 **/
 
 input[type=text], input[type=password], textarea{
 	width: 100%;
+	font-size: 1.4em;
 	border: 1px solid @gray-lightmid;
-	padding: 0.4em;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 0.5em;
+}
+
+input::-webkit-input-placeholder {
+	color: @black90 !important;
+}
+
+input::-moz-placeholder {
+	color: @black90 !important;
+}
+
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: @black90 !important;
+}
+
+input:-ms-input-placeholder { 
+	color: @black90 !important;
 }
 
 /** 
@@ -219,6 +257,16 @@ input[type=text], input[type=password], textarea{
 	border-radius: 5px !important;
 	-moz-border-radius: 5px !important;
 	-webkit-border-radius: 5px !important;
+}
+
+.radius-mini{
+	border-radius: 4px !important;
+	-moz-border-radius: 4px !important;
+	-webkit-border-radius: 4px !important;
+}
+
+.btn:hover, .btn:focus{
+	color: @gray-lightbig;
 }
 
 .btn-join-home{
@@ -266,7 +314,21 @@ input[type=text], input[type=password], textarea{
 }
 
 .btn-blue{
-	background-color: @brand-blue;
+	background-color: @brand-blue !important;
+}
+
+.btn-red{
+	background-color: @brand-red !important; 
+}
+
+.btn-login{
+	font-size: 1.2em;
+	color: @white;
+	line-height: 1.4em;
+	background-color: @brand-green;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    border-color: none !important;
 }
 
 /** 
@@ -305,10 +367,10 @@ input[type=text], input[type=password], textarea{
 .popup {
 	position: relative;
 	border: 3px solid @gray;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	background: @white;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background: @gray-lighter;
 	padding: 0.9em 2em;
 	width: auto;
 	max-width: 450px;
@@ -335,6 +397,18 @@ input[type=text], input[type=password], textarea{
 		width: 100%;
 		border: 1px solid @gray-lightmid;
 		padding: 0.4em;
+	}
+}
+
+/** 
+** Colors
+**/
+
+.brand-grey{
+	color: @brand-grey !important;
+	
+	&:hover, &:focus{
+		color: @brand-grey30 !important;
 	}
 }
 

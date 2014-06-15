@@ -19,6 +19,11 @@
  * @version $Id: $
  */
 return array (
-  'Enter to panel' => '',
-  'Send' => '',
+  'Forgot your password?' => '',
+  'Need an account?' => '',
+  'Sign in' => '',
+  'Your password' => '',
+  'Your password is mandatory' => '',
+  'Your username' => '',
+  'Your username is mandatory' => '',
 );
