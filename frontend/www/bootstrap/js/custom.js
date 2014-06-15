@@ -17,9 +17,21 @@ $(window).resize(function(){
 //Popup triggers
 function activatePopups()
 {
-	/* Login popup trigger */
-	$('#btn-login, #btn-login-mobile').magnificPopup({
+	/* Popups triggers */
+	$('#btn-login, #btn-login-mobile, #btn-join').magnificPopup({
 		type:'inline',
+	});
+	
+	/* Login popup actions */
+	$("#btn-login, #btn-login-popup, #btn-login-mobile").click(function(){
+		$("#login-form").removeClass("hide");
+		$("#join-form").addClass("hide");
+	});
+	
+	/* Join popup actions */
+	$("#btn-join, #btn-join-popup").click(function(){
+		$("#login-form").addClass("hide");
+		$("#join-form").removeClass("hide");
 	});
 }
 

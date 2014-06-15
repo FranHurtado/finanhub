@@ -7,16 +7,16 @@
 
 <section id="slider">
 	<div class="content">
-		<h2>Problems with your home budget?</h2>
+		<h2><?php echo Yii::t("home", "Problems with your home budget?"); ?></h2>
 		
 		<div class="row">
-			<div class="col-xs-4 col-sm-5 col-md-5"></div>
+			<div class="col-xs-3 col-sm-4 col-md-5"></div>
 			
-			<div class="col-xs-4 col-sm-2 col-md-2">
-				<a href="#login-popup" class="btn-join-home radius" id="btn-join"><?php echo Yii::t("home", "JOIN NOW"); ?></a>
+			<div class="col-xs-6 col-sm-4 col-md-2">
+				<a href="#login-popup" class="btn btn-join-home radius" id="btn-join"><?php echo Yii::t("home", "JOIN NOW"); ?></a>
 			</div>
 			
-			<div class="col-xs-4 col-sm-5 col-md-5"></div>
+			<div class="col-xs-3 col-sm-4 col-md-5"></div>
 		</div> <!-- /.row -->
 	</div> <!-- /.content -->
 </section>

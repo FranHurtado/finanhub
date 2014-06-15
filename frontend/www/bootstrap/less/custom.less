@@ -21,7 +21,7 @@ a{
 .content{
 	max-width: 1280px;
 	min-width: 320px;
-	padding: 0.6em 1em;
+	padding: 0.6em 2em;
 	margin: 0 auto;
 }
 
@@ -182,16 +182,16 @@ footer{
 	}
 }
 
-.login-form{
+#login-form, #join-form{
 	
 	h1{
+		width: 100%;
 		font-family: @font-family-lucida;
 		font-size: 3em !important;
 		color: @brand-green !important;
 		text-shadow: none !important;
 		margin: 0.5em 0 0.6em 0 !important;
-		padding-left: 0.9em;
-		display: inline-block;
+		display: block;
 		text-align: center;
 		
 		span{
@@ -204,30 +204,30 @@ footer{
 ** Form elements
 **/
 
-input[type=text], input[type=password], textarea{
+input[type=text], input[type=password], input[type=email],textarea{
 	width: 100%;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	border: 1px solid @gray-lightmid;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
-	padding: 0.5em;
+	padding: 0.5em 0.6em;
 }
 
 input::-webkit-input-placeholder {
-	color: @black90 !important;
+	color: @gray-lightmid !important;
 }
 
 input::-moz-placeholder {
-	color: @black90 !important;
+	color: @gray-light!important;
 }
 
 input:-moz-placeholder {   /* Older versions of Firefox */
-	color: @black90 !important;
+	color: @gray-light !important;
 }
 
 input:-ms-input-placeholder { 
-	color: @black90 !important;
+	color: @gray-lightmid !important;
 }
 
 /** 
@@ -266,7 +266,11 @@ input:-ms-input-placeholder {
 }
 
 .btn:hover, .btn:focus{
-	color: @gray-lightbig;
+	color: @gray-lightbig !important;
+}
+
+.btn:active{
+	color: @white !important;
 }
 
 .btn-join-home{
@@ -419,7 +423,7 @@ input:-ms-input-placeholder {
 @media (max-width: @screen-xs) {
 	body{ 
 		font-size: 7px !important; 
-		line-height: 1em;
+		line-height: 1.6em !important;
 	}
 	section#slider{
 		background: url("../img/slider1-s.jpg") no-repeat;
@@ -440,7 +444,7 @@ input:-ms-input-placeholder {
 @media (max-width: @screen-xs-max) {
 	body{ 
 		font-size: 8px !important; 
-		line-height: 1em;
+		line-height: 1.6em !important;
 	}
 	section#slider{
 		background: url("../img/slider1-s.jpg") no-repeat;

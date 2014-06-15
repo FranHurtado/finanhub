@@ -15,10 +15,9 @@
  * of the guide for details.
  *
  * NOTE, this file must be saved in UTF-8 encoding.
- *
- * @version $Id: $
  */
 return array (
+  'Problems with your home budget?' => '¿Problemas con el presupuesto de tu casa?',
   'Contact' => 'Contacto',
   'How it works' => 'Como funciona',
   'JOIN NOW' => 'CREAR CUENTA',

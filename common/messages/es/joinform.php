@@ -17,10 +17,17 @@
  * NOTE, this file must be saved in UTF-8 encoding.
  */
 return array (
-  'Contact' => '',
-  'How it works' => '',
-  'JOIN NOW' => '',
-  'Problems with your home budget?' => '',
-  'Sign in' => '',
-  'View Demo' => '',
+  'Already member' => 'Ya tengo cuenta',
+  'Sign up' => 'Registrate',
+  'Your email' => 'Tu email',
+  'Your email is mandatory' => 'Tu email es obligatorio',
+  'Your first name' => 'Tu nombre',
+  'Your first name is mandatory' => 'Tu nombre es obligatorio',
+  'Your last name' => 'Tus apellidos',
+  'Your last name is mandatory' => 'Tus apellidos son obligatorios',
+  'Your password' => 'Tu contaseña',
+  'Your password is mandatory' => 'Tu contraseña es obligatoria',
+  'Your username' => 'Tu usuario',
+  'Your username is mandatory' => 'Tu usuario es obligatorio',
+  'Hi! Please fill all the fields to create your account.' => '¡Hola! Rellena todos los campos para crear tu cuenta.',
 );

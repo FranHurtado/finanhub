@@ -17,10 +17,17 @@
  * NOTE, this file must be saved in UTF-8 encoding.
  */
 return array (
-  'Contact' => '',
-  'How it works' => '',
-  'JOIN NOW' => '',
-  'Problems with your home budget?' => '',
-  'Sign in' => '',
-  'View Demo' => '',
+  'Already member' => '',
+  'Hi! Please fill all the fields to create your account.' => '',
+  'Sign up' => '',
+  'Your email' => '',
+  'Your email is mandatory' => '',
+  'Your first name' => '',
+  'Your first name is mandatory' => '',
+  'Your last name' => '',
+  'Your last name is mandatory' => '',
+  'Your password' => '',
+  'Your password is mandatory' => '',
+  'Your username' => '',
+  'Your username is mandatory' => '',
 );

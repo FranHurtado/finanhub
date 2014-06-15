@@ -16,7 +16,17 @@ class EController extends CController
 	public $meta_description = array();
 	public $breadcrumbs;
 
-
+	/*
+     * On every Controller instance set language from get if is index page get main language
+     */
+    public function init(){
+        if(isset($_GET['lang']))
+            Yii::app()->setLanguage($_GET['lang']);
+        else
+            Yii::app()->setLanguage(Yii::app()->params->defaultLanguage);
+        parent::init();
+    }
+    
 	/**
 	 * Gets a param
 	 * @param $name

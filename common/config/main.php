@@ -9,10 +9,7 @@
  * @copyright 2013 2amigOS! Consultation Group LLC
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-return array(
-	'language'=>'es',
-	'sourceLanguage'=>'es',
-		
+return array(		
 	'preload' => array('log'),
 	'aliases' => array(
 		'frontend' => dirname(__FILE__) . '/../..' . '/frontend',
@@ -71,6 +68,7 @@ return array(
 	),
 	'params' => array(
 		// php configuration
+		'defaultLanguage'    => 'en',
 		'php.defaultCharset' => 'utf-8',
 		'php.timezone'       => 'UTC',
 		'imgPath'            => './img/userfiles/',
@@ -78,11 +76,11 @@ return array(
 		'siteRoot'           => 'http://finanhub.local/',
 		'pagesize'			 => '50',
 		// mailer variables
-		'appMailServer'=>'',
-        'appMailPort'=>25,
-        'appMailUser'=>'',
-        'appMailPass'=>'',
-        'backendUserFiles' => dirname(__FILE__) . '/../..' . '/backend/www/img/userfiles/',
-        'frontendUserFiles' => dirname(__FILE__) . '/../..' . '/frontend/www/img/userfiles/'
+		'appMailServer'      => '',
+        'appMailPort'        => 25,
+        'appMailUser'        => '',
+        'appMailPass'        => '',
+        'backendUserFiles'   => dirname(__FILE__) . '/../..' . '/backend/www/img/userfiles/',
+        'frontendUserFiles'  => dirname(__FILE__) . '/../..' . '/frontend/www/img/userfiles/'
 	),
 );
